@@ -1,2 +1,2 @@
-#!/pin/bash
+#!bin/bash
 echo "Hello ralasfoor"
