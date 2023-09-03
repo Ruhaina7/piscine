@@ -1,1 +1,1 @@
-curl https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json | jq --argjson id "$HERO_ID" '. [] | select(.id == $id) | .connections.relatives' | sed 's/^"\(.*\)"$/\1/'
+curl -s https://learn.reboot01.com/assets/superhero/all.json | jq ' .[] | select( .id == '$HERO_ID'| .connections.relatives)' | sed 's/^"\(.*\)"$/\1/'
