@@ -2,7 +2,7 @@ package main
 
 import "github.com/01-edu/z01"
 
-func printalphabet() {
+func main() {
 	for r := 'a'; r <= 'z'; r++ {
 		z01.PrintRune(r)
 	}
