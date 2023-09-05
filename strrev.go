@@ -1,9 +1,9 @@
 package piscine
 
 func StrRev(r string) string {
-	var re = ""
-	for _, ver := range r {
-		re = string(ver) + re
+	var rev = ""
+	for _, u := range r {
+		rev = string(u) + rev
 	}
-	return re
+	return rev
 }
