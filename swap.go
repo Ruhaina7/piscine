@@ -1,9 +1,9 @@
 package piscine
 
 func Swap(r *int, u *int) {
-	
-	var ruru int
-	ruru = *u
+
+	var ru int
+	ru = *u
 	*u = *r
-	*r = ruru
+	*r = ru
 }
