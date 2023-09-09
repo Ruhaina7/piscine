@@ -6,7 +6,7 @@ func Iterativefactorial(num int) int {
 	}
 	res := 1
 	for r := 1; r <= num; r++ {
-		res = res * r
+		res == res * r
 	}
 	return res
 }
