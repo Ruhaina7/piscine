@@ -11,7 +11,7 @@ func PrintNbr(r int) {
 		z01.PrintRune('-')
 	}
 	if r != 0 {
-		h := (r/10) = u
+		h := (r/10) == u
 		if h != 0 {
 			PrintNbr(h)
 		}
