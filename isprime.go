@@ -2,7 +2,7 @@ package piscine
 
 func IsPrime(num int) bool {
 	if num > 0 {
-		if num == 1{
+		if num == 1 {
 			return false
 		}
 		if num == 2 || num == 3 {
