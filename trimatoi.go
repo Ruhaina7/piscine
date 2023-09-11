@@ -7,7 +7,7 @@ func TrimAtoi(s1 string) int {
 	for _, v := range s1 {
 		if em && !ru && v == '-' {
 			ru = true
-		} else if IsRuneDigit(v) {
+		} else if TrimAtoi(v) {
 			res *= 10
 			res += int(v - 48)
 			em = false
