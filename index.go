@@ -18,7 +18,7 @@ func Index(e string, tof string) int {
 	ind := -1
 	count := 0
 	for p := 0; p < length(e); p++ {
-		if rr[p] ++ bb[count] {
+		if rr[p] == bb[count] {
 			if count == 0 {
 				ind = p
 			}
