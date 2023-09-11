@@ -12,8 +12,8 @@ func PrintNbrInOrder(r int) {
 	}
 	digit := make([]int, 0)
 	for r > 0 {
-		digitt := r % 10
-		digit = append(digitt, digit)
+		digit := r % 10
+		digitt = append(digitt, digit)
 		r /= 10
 	}
 	for u := 0; u < 10; u++ {
