@@ -16,7 +16,7 @@ func PrintNbrInOrder(r int) {
 		digit = append(digitt, digit)
 		r /= 10
 	}
-	for u := 0: u < 10; u++ {
+	for u := 0; u < 10; u++ {
 		for _, digit := range digitt {
 			if digit == u {
 				z01.PrintRune(rune('0' + digit))
