@@ -3,7 +3,7 @@ package piscine
 func IsAlpha(s1 string) bool {
 	r := []rune(s1)
 	for u := 0; u < len(u); u++ {
-		if (r[a] < 'a' || r[a] > 'z') && (r[a] < 'A' || r[a] > 'Z') && (r[a] < '0' || r[a] > '9') {
+		if (r[u] < 'a' || r[u] > 'z') && (r[u] < 'A' || r[u] > 'Z') && (r[u] < '0' || r[u] > '9') {
 			return false
 		}
 	} 
