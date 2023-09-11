@@ -10,7 +10,7 @@ func PrintNbrInOrder(r int) {
 		z01.PrintRune('0')
 		return
 	}
-	digit := make([]int, 0)
+	digitt := make([]int, 0)
 	for r > 0 {
 		digit := r % 10
 		digitt = append(digitt, digit)
