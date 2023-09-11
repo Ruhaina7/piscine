@@ -6,6 +6,6 @@ func IsAlpha(s1 string) bool {
 		if (r[u] < 'a' || r[u] > 'z') && (r[u] < 'A' || r[u] > 'Z') && (r[u] < '0' || r[u] > '9') {
 			return false
 		}
-	} 
+	}
 	return true
 }
