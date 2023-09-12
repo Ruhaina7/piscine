@@ -1,24 +1,28 @@
 package main
 
 import (
-	"os"
-
 	"github.com/01-edu/z01"
+
+	"os"
 )
 
 func main() {
-	args := os.Args[1:]
-	for r, u := range args {
-		for j, h := range args {
-			if u < h {
-				args[r], args[j] = args[j], args[r]
+	arg := os.Args
+	count := 0
+	for s := range arg {
+		count = s + 1
+	}
+	for i := 1; i < count; i++ {
+		for j := i + 1; j < count; j++ {
+			if arg[i] > arg[j] {
+				arg[i], arg[j] = arg[j], arg[i]
 			}
 		}
 	}
-	for _, u := range args {
-		for _, h := range u {
-			z01.PrintRune(h)
-			z01.PrintRune('\n')
+	for j := 1; j <= count-1; j++ {
+		for _, element := range arg[j] {
+			z01.PrintRune(element)
 		}
+		z01.PrintRune('\n')
 	}
 }
