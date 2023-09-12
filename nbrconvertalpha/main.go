@@ -1,25 +1,29 @@
 package main
 
 import (
-	"os"
-
 	"github.com/01-edu/z01"
+	"os"
 )
 
 func main() {
-	arg := os.Args
-	count := 0
-	index := 96
-	for i, s := range arg {
-		count = i + 1
-		if s == "--upper" {
-			index = 64
+	arg := os.Args[1:]
+	charCase := 0
+	for ind := range arg {
+		if ind == 0 && arg[ind] == "--upper" {
+			charCase = -32
+			arg = arg[1:]
 		}
 	}
-	for j := 1; j <= count-1; j++ {
-		for _, element := range arg[j] {
-			z01.PrintRune(element + rune(index))
+	for _, a := range arg {
+		digit := 0
+		for _, b := range a {
+			digit = digit*10 + int(b-'0')
 		}
-		z01.PrintRune(10)
+		if 1 <= digit && digit <= 26 {
+			z01.PrintRune('a' + rune(digit+charCase) - 1)
+		} else {
+			z01.PrintRune(' ')
+		}
 	}
+	z01.PrintRune('\n')
 }
