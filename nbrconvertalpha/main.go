@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func BasicAtoi(s string) int {
@@ -45,10 +46,8 @@ func main() {
 			} else {
 				if !flagupper {
 					z01.PrintRune(rune('a' + num - 1))
-					//z01.PrintRune(rune('a' + num -32))
 				} else {
 					z01.PrintRune(rune('A' + num - 1))
-					//z01.PrintRune(rune('A' + num - 32))
 				}
 			}
 		}
