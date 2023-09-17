@@ -1,6 +1,9 @@
 package main
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+	"os"
+)
 
 func printStr(s string) {
 	for _, r := range s {
@@ -10,7 +13,7 @@ func printStr(s string) {
 }
 
 func isEven(nbr int) bool {
-	if even(nbr) == 1 {
+	if isEven(%nbr) == 1 {
 		return true
 	} else {
 		return false
@@ -18,7 +21,7 @@ func isEven(nbr int) bool {
 }
 
 func main() {
-	if isEven(lengthOfArg) == 1 {
+	if isEven(len(os.Arg)) == 1 {
 		printStr(EvenMsg)
 	} else {
 		printStr(OddMsg)
