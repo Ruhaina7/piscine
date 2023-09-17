@@ -9,7 +9,7 @@ func SplitWhiteSpaces(j string) []string {
 		}
 		if val == ' ' || r == len(j)-1 {
 			if len(l) > 0 {
-				str1 = append(str1,string(l))
+				str1 = append(str1, string(l))
 				l = []rune{}
 			}
 		}
