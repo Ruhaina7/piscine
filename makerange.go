@@ -9,4 +9,5 @@ func MakeRange(min, max int) []int {
 		result2[u] = r
 		u++
 	}
+	return result2
 }
