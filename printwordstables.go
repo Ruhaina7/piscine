@@ -10,4 +10,3 @@ func PrintWordsTables(r []string) {
 		z01.PrintRune('\n')
 	}
 }
-	
