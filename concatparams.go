@@ -8,7 +8,7 @@ func ConcatParams(args []string) string {
 		size++
 	}
 	for r, t := range args {
-		res1ult += t
+		result += t
 		if r != size-1 {
 			result += "\n"
 		}
