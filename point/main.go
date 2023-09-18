@@ -29,6 +29,7 @@ func main() {
 	printnbr(49)
 	z01.PrintRune('\n')
 }
+
 func printnbr(x rune) {
 	z01.PrintRune(x)
 }
