@@ -20,13 +20,13 @@ func main() {
 	for _, r := range s1 {
 		z01.PrintRune(r)
 	}
-	printnbr('4')
-	printnbr('2')
+	printnbr(52)
+	printnbr(50)
 	for _, r := range s2 {
 		z01.PrintRune(r)
 	}
-	printnbr('2')
-	printnbr('1')
+	printnbr(50)
+	printnbr(49)
 	z01.PrintRune('\n')
 }
 func printnbr(x rune) {
