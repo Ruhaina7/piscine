@@ -12,7 +12,7 @@ func main() {
 		return
 	}
 	if len(args) < 1 {
-		fmt.Println("file name missing")
+		fmt.Println("File name missing")
 		return
 	}
 	file, _ := os.Open("quest.txt")
