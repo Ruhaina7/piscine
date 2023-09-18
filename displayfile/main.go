@@ -15,7 +15,7 @@ func main() {
 		fmt.Println("File name missing")
 		return
 	}
-	file, _ := os.Open("quest.txt")
+	file, _ := os.Open("quest8.txt")
 	bb := make([]byte, 14)
 	file.Read(bb)
 	fmt.Println(string(bb))
