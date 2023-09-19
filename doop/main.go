@@ -8,7 +8,7 @@ import (
 
 func validateOperator(test string) bool {
 	op := []string{"+", "-", "*", "/", "%"}
-	for _, res:= range op {
+	for _, res := range op {
 		if res == test {
 			return true
 		}
@@ -32,17 +32,16 @@ func main() {
 			} else if args[1] == "/" && second == 0 {
 				fmt.Print("No division by 0\n")
 			} else if args[1] == "+" {
-				fmt.Println(premier+second)
+				fmt.Println(premier + second)
 			} else if args[1] == "-" {
-				fmt.Println(premier-second)
+				fmt.Println(premier - second)
 			} else if args[1] == "*" {
 				fmt.Println(premier * second)
 			} else if args[1] == "/" {
-				fmt.Println(premier/second)
+				fmt.Println(premier / second)
 			} else {
-				fmt.Println(premier%second)
+				fmt.Println(premier % second)
 			}
-
 		}
 	}
 
