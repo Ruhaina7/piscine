@@ -1,4 +1,4 @@
-package hackathon
+package piscine
 
 func CollatzCountRec(start int) int {
 	if start == 1 {
