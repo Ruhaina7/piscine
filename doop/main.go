@@ -19,7 +19,7 @@ func validateOperator(test string) bool {
 func main() {
 	args := os.Args[1:]
 	if len(args) > 3 || len(args) < 3 {
-		fmt.Print()
+		fmt.Print(1)
 	} else {
 		if validateOperator(args[1]) == false {
 			fmt.Println(0)
