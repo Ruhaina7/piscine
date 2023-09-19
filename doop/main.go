@@ -19,10 +19,10 @@ func validateOperator(test string) bool {
 func main() {
 	args := os.Args[1:]
 	if len(args) > 3 || len(args) < 3 {
-		fmt.Print(1)
+		fmt.Print()
 	} else {
 		if validateOperator(args[1]) == false {
-			fmt.Println(0)
+			fmt.Println(1)
 		} else {
 			premier, _ := strconv.Atoi(args[0])
 			second, _ := strconv.Atoi(args[2])
