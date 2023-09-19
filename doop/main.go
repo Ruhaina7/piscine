@@ -22,7 +22,7 @@ func main() {
 		fmt.Print()
 	} else {
 		if validateOperator(args[1]) == false {
-			fmt.Println(1)
+			fmt.Println(0)
 		} else {
 			premier, _ := strconv.Atoi(args[0])
 			second, _ := strconv.Atoi(args[2])
@@ -43,4 +43,5 @@ func main() {
 			}
 		}
 	}
+	fmt.Println(1)
 }
