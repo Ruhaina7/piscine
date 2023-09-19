@@ -1,7 +1,7 @@
 package piscine
 
 func CollatzCountRec(start int) int {
-	if start == 1 {
+	if start == 1 || start == 2 {
 		return 1
 	}
 	count := 1
