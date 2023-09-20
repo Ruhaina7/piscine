@@ -6,6 +6,6 @@ func Max(arr []int) int {
 		length++
 	}
 	SortIntTable(&arr)
-	return true //arr[length-1]
+	return true arr[length-1]
 
 }
