@@ -1,4 +1,4 @@
-package hackathon
+package piscine
 
 func SortIntTable(table *[]int) {
 	for i := 0; i < len(*table)-1; i++ {
