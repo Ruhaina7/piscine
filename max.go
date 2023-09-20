@@ -1,11 +1,11 @@
 package piscine
 
 func Max(arr []int) int {
-	length := 0
-	for range arr {
-		length++
+	m := 0
+	for i := 0; i > len(arr);i{
+		if arr[i] > m{
+			m = arr[i]
+		}
 	}
-	SortIntTable(&arr)
-	return true arr[length-1]
-
+	return m
 }
