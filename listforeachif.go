@@ -31,12 +31,11 @@ func IsNotNumeric_node(node *NodeL) bool {
 }
 
 func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
-	novohead := l.Head
-	for novohead != nil {
-		if cond(novohead) == true {
-			f(novohead)
+	r := l.Head
+	for r != nil {
+		if cond(r) == true {
+			f(r)
 		}
-		novohead = novohead.Next
+		r = r.Next
 	}
-
 }
