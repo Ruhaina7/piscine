@@ -8,7 +8,6 @@ func ListPushFront(l *List, data interface{}) {
 		l.Head = n
 		return
 	}
-
 	n.Next = l.Head
 	l.Head = n
 }
